@@ -21,5 +21,6 @@ jobs:
 
     - name: Publish to GitHub Container Registry
       run: |
+        echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u amayiro2552 --password-stdin
         docker tag $IMAGE_NAME ghcr.io/amayiro2552/ue19_labo09-10:latest
         docker push ghcr.io/amayiro2552/ue19_labo09-10:latest
