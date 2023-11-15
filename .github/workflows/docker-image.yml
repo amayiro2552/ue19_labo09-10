@@ -88,5 +88,5 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'ghcr.io/amayiro2552/ue19_labo09-10:latest'
+          image-ref: 'ghcr.io/amayiro2552/ue19_labo09-10:main'
           format: 'table'
